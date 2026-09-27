@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Israt Jahan Nijhum — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#26312c;
+    --paper:#f2ede1;
+    --panel:#e9e1cd;
+    --pine:#2f4a3d;
+    --pine-dim:#4c6b5b;
+    --gold:#b8873f;
+    --rule: rgba(38,49,44,0.18);
+    --maxw: 760px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Public Sans", sans-serif;
+    font-size:16px;
+    line-height:1.6;
+  }
+  a{color:var(--pine);}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+  header.hero{
+    padding:64px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .hero-inner{display:flex; gap:28px; align-items:center;}
+  .portrait{
+    width:112px; height:112px; border-radius:50%;
+    object-fit:cover; flex-shrink:0;
+    background:var(--panel);
+    border:1px solid var(--rule);
+  }
+  .hero-text h1{
+    font-family:"Fraunces", serif;
+    font-weight:600;
+    font-size:2.1rem;
+    margin:0 0 6px;
+    color:var(--pine);
+  }
+  .hero-text p.role{
+    margin:0;
+    color:var(--pine-dim);
+    font-size:1.02rem;
+  }
+  .contact-row{
+    margin-top:18px;
+    display:flex; flex-wrap:wrap; gap:6px 18px;
+    font-size:0.92rem;
+    color:var(--ink);
+  }
+  .contact-row span{white-space:nowrap;}
+
+  section{padding:40px 0;}
+  section + section{border-top:1px solid var(--rule);}
+  h2{
+    font-family:"Fraunces", serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:1.4rem;
+    margin:0 0 20px;
+    color:var(--pine);
+  }
+  p.lead{max-width:62ch;}
+
+  .timeline{list-style:none; margin:0; padding:0; border-left:2px solid var(--rule); }
+  .timeline li{
+    position:relative;
+    padding:2px 0 22px 26px;
+  }
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{
+    content:"";
+    position:absolute; left:-6px; top:6px;
+    width:10px; height:10px; border-radius:50%;
+    background:var(--gold);
+    border:2px solid var(--paper);
+  }
+  .tl-year{
+    font-size:0.82rem;
+    color:var(--pine-dim);
+    display:block;
+    margin-bottom:2px;
+  }
+  .tl-title{font-weight:600;}
+  .tl-sub{color:#5a5347; font-size:0.94rem;}
+
+  .exp-list{list-style:none; margin:0; padding:0;}
+  .exp-list li{
+    padding:16px 0;
+    border-bottom:1px solid var(--rule);
+  }
+  .exp-list li:last-child{border-bottom:none;}
+  .exp-role{font-weight:600;}
+  .exp-org{color:var(--pine-dim); font-size:0.94rem;}
+  .exp-date{
+    float:right;
+    font-size:0.82rem;
+    color:#8a8272;
+  }
+  .exp-desc{margin:6px 0 0; font-size:0.94rem; color:#4a453b;}
+
+  ul.plain{margin:0; padding-left:20px;}
+  ul.plain li{margin-bottom:10px;}
+
+  footer{
+    padding:36px 0 56px;
+    text-align:left;
+    font-size:0.88rem;
+    color:var(--pine-dim);
+  }
+
+  @media (max-width:520px){
+    .hero-inner{flex-direction:column; align-items:flex-start;}
+    .exp-date{float:none; display:block; margin-top:2px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="portrait" src="israt.jpeg" alt="Israt Jahan Nijhum" onerror="this.style.display='none'">
+      <div class="hero-text">
+        <h1>Israt Jahan Nijhum</h1>
+        <p class="role">Teacher Education &amp; Inclusive Education Research</p>
+      </div>
+    </div>
+    <div class="contact-row">
+      <span>Bangamata Sheikh Fazilatunnesa Mujib Hall, University of Dhaka</span>
+    </div>
+  </header>
+
+  <section id="objective">
+    <h2>Career objective</h2>
+    <p class="lead">Motivated and passionate about advancing the organizational and legal contexts of schooling, teacher professionalism, learning theories, research, and inclusive education. Seeking to build a career in teacher education — contributing as a schoolteacher, consultant, or school administrator.</p>
+  </section>
+
+  <section id="education">
+    <h2>Academic qualifications</h2>
+    <ul class="timeline">
+      <li>
+        <span class="tl-year">2025</span>
+        <span class="tl-title">Bachelor of Education (BEd), Special Education</span>
+        <span class="tl-sub">Institute of Education and Research, University of Dhaka — CGPA 3.75</span>
+      </li>
+      <li>
+        <span class="tl-year">2020</span>
+        <span class="tl-title">Higher Secondary Certificate, Humanities</span>
+        <span class="tl-sub">Rajuk Uttara Model College, Dhaka Board — GPA 5.00</span>
+      </li>
+      <li>
+        <span class="tl-year">2018</span>
+        <span class="tl-title">Secondary School Certificate, Humanities</span>
+        <span class="tl-sub">Dhamura High School, Barishal Board — GPA 5.00</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work experience</h2>
+    <ul class="exp-list">
+      <li>
+        <span class="exp-date">Sep 2025 – Present</span>
+        <div class="exp-role">Junior Research Assistant</div>
+        <div class="exp-org">Bangladesh Society for Ecological Research Initiative (BSERI)</div>
+      </li>
+      <li>
+        <div class="exp-role">Survey and Interview Team Member</div>
+        <div class="exp-org">Effectiveness Study on the Continuous Professional Development (CPD) Program and Training, 2025</div>
+        <p class="exp-desc">Part of the Fifth Primary Education Development Program (PEDP-5), Directorate General of Primary Education, funded by UNICEF.</p>
+      </li>
+      <li>
+        <span class="exp-date">Nov 2024 – Feb 2025</span>
+        <div class="exp-role">Intern Teacher</div>
+        <div class="exp-org">Baptist Mission Integrated School, Mirpur, Dhaka</div>
+        <p class="exp-desc">Prepared a report on an educational institution run by a non-profit charitable organization supporting children from underprivileged backgrounds.</p>
+      </li>
+      <li>
+        <div class="exp-role">Election Observer</div>
+        <div class="exp-org">Voice Network</div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="activities">
+    <h2>Extra-curricular activities</h2>
+    <ul class="plain">
+      <li>Coordinator, distributing stipends to around 65 injured individuals treated at Dhaka Medical College Hospital and Bangladesh Medical University Hospital in July Biplob, funded by the Dhaka Medical College Alumni of North America.</li>
+      <li>Active contributor to national dailies, including Daily Ittefaq, since January 2022 — more than 40 published articles across various topics.</li>
+      <li>International Affairs Secretary, Dhaka University Hall Quiz Club (Nov 2023 – Present)</li>
+      <li>Information and Research Secretary, Dhaka University Environment Society (Mar 2024 – Jul 2025)</li>
+      <li>Team Member, IER Debating Club, University of Dhaka</li>
+      <li>Cadet, Bangladesh National Cadet Corps (BNCC) — Bangladesh Army Wing</li>
+    </ul>
+  </section>
+
+  <footer>
+    Israt Jahan Nijhum
+  </footer>
+</div>
+
+</body>
+</html>
